@@ -14,6 +14,7 @@ This Ansible is designed to deploy and configure the Docker Distribution registr
 
 **References**
 
+  - Docker Registry : https://docs.docker.com/registry/
   - Distribution : https://github.com/distribution/distribution
 
 ### Role variables
@@ -33,7 +34,7 @@ This Ansible is designed to deploy and configure the Docker Distribution registr
 
 ### Examples
 
-The configuration of the Distribution Registry is pretty simple, it's a simple YAML dictionnary :
+The configuration of the Registry is pretty simple, it's a simple YAML dictionnary :
 
 ```YAML
 registry_configuration:
@@ -52,6 +53,8 @@ registry_configuration:
   http:
     addr: 0.0.0.0:5000
     host: https://my.registry.internal:5000
+
+  # Configure the registry as pull-through cache
   proxy:
     remoteurl: https://registry-1.docker.io
     username: <username>
