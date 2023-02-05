@@ -4,7 +4,7 @@
 
 ### General informations
 
-This Ansible is designed to deploy and configure the Docker Registry distribution on target server(s).
+This Ansible is designed to deploy and configure the Docker Registry distribution on target server(s) (using binary).
 
 **Table of Contents**
 
