@@ -33,7 +33,7 @@ This Ansible is designed to deploy and configure the Docker Distribution registr
 
 ### Examples
 
-You can find some configurations examples :
+The configuration of the Distribution Registry is pretty simple, it's a simple YAML dictionnary :
 
 ```YAML
 registry_configuration:
