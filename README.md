@@ -38,10 +38,10 @@ The configuration of the Registry is pretty simple, it's a simple YAML dictionna
 
 ```YAML
 registry_configuration:
-  version: 0.1
+  version: 0.1  # Required
   log:
     level: info
-  storage:
+  storage:      # Required
     filesystem:
       rootdirectory: /var/lib/registry
     maintenance:
