@@ -21,7 +21,7 @@ This Ansible is designed to deploy and configure the Docker Distribution registr
 
 | Name                              | Default                      | Description                                                      |
 | :-------------------------------- | :--------------------------- | :--------------------------------------------------------------- |
-| `registry_version`                | `2.8.1`                      | Defines the version of Registry to install                        |
+| `registry_version`                | `2.8.1`                      | Defines the version of the Registry to install                        |
 | `registry_install_dir`            | `/usr/local/bin`             | Defines the Registry binary installation directory               |
 | `registry_config_dir`             | `/etc/registry`              | Defines the Registry configuration directory                     |
 | `registry_config_path`            | `{{ registry_config_dir }}/config.yaml`|  Defines the absolute path to the Registry configuration file |
