@@ -1,0 +1,17 @@
+---
+registry_configuration:
+  version: 0.1
+  log:
+    level: info
+  storage:
+    filesystem:
+      rootdirectory: /var/lib/registry
+    maintenance:
+      uploadpurging:
+        enabled: true
+        age: 168h
+        interval: 24h
+        dryrun: true
+  http:
+    addr: 0.0.0.0:5000
+    host: https://my.registry.internal:5000

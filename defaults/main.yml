@@ -1,2 +1,22 @@
 ---
-# defaults file for ansible-role-template
+# -----------------------------------------------------------------------------
+# GENERAL
+# -----------------------------------------------------------------------------
+registry_version: '2.8.1'
+
+registry_install_dir: /usr/local/bin
+registry_config_dir: /etc/registry
+registry_config_path: "{{ registry_config_dir }}/config.yaml"
+registry_data_dir: /var/lib/registry
+registry_logs_dir: /var/log/registry
+
+registry_binary_update: false
+
+# -----------------------------------------------------------------------------
+# CONFIGURATION
+# -----------------------------------------------------------------------------
+registry_configuration:
+  version: '0.1'
+  storage:
+    filesystem:
+      rootdirectory: /var/lib/registry

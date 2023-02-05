@@ -1,2 +1,6 @@
 ---
-# handlers file for ansible-role-template
+- name: Restart Registry service
+  ansible.builtin.systemd:
+    name: registry.service
+    state: restarted
+    daemon_reload: yes

@@ -1,2 +1,3 @@
 ---
-# vars file for ansible-role-template
+registry_binary_archive_url: "https://github.com/distribution/distribution/releases/download/v{{ registry_version }}/registry_{{ registry_version }}_linux_amd64.tar.gz"
+registry_binary_archive_checksum: "f1a376964912a5fd7d588107ebe5185da77803244e15476d483c945959347ee2"
