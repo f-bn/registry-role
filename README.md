@@ -1,6 +1,10 @@
+<p><img src="https://github.com/distribution/distribution/raw/main/distribution-logo.svg" alt="registry-logo" title="registry" align="top" height=180 /></p>
+
+*The toolkit to pack, ship, store, and deliver container content*
+
 ### General informations
 
-A brief description of the role goes here.
+This Ansible is designed to deploy and configure the Docker Registry distribution on target server(s).
 
 **Table of Contents**
 
@@ -8,17 +12,9 @@ A brief description of the role goes here.
   - [Examples](#examples)
   - [Install and use this role](#install-and-use-this-role)
 
-**Supported Platforms**
-
-  - \<platform\>
-
-**Requirements**
-
-  - \<requirement\>
-
 **References**
 
-  - \<reference : [Link]()\>
+  - Distribution : https://github.com/distribution/distribution
 
 ### Role variables
 
@@ -30,14 +26,14 @@ The role variables documentation are available here :
 
 You can find some configurations examples :
 
-  - [Example](docs/examples.md)
+  - [Configure the Docker Registry](docs/examples.md)
 
 ### Install and use this role
 
 * Install the role using the command-line :
 
   ```shell
-  $ ansible-galaxy role install git+https://github.com/f-bn/ansible-role-template.git ansible_role_template
+  $ ansible-galaxy role install git+https://github.com/f-bn/registry-role.git registry
   ```
 
 * You can also install the role in your projects using a `requirements.yml` file and `ansible-galaxy` command-line :
@@ -46,8 +42,8 @@ You can find some configurations examples :
   $ cat requirements.yml
   ---
   roles:
-    - name: ansible_role_template
-      src: https://github.com/f-bn/ansible-role-template.git
+    - name: registry
+      src: https://github.com/f-bn/registry-role.git
       scm: git
       version: '1.0.0'
 
@@ -60,5 +56,5 @@ You can find some configurations examples :
   - name: Deploy
     hosts: <hosts>
     roles:
-      - role: ansible_role_template
+      - role: registry
   ```
