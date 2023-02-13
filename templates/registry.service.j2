@@ -4,7 +4,7 @@
 Description=OCI Distribution Registry
 Documentation=https://docs.docker.com/registry/
 After=network-online.target local-fs.target
-AssertPathIsExecutable={{ registry_install_dir }}/registry
+AssertFileIsExecutable={{ registry_install_dir }}/registry
 AssertPathExists={{ registry_config_path }}
 
 [Service]
